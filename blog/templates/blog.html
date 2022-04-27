@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Blog
+{% endblock %}
+
+{% block content %}
+<h2>All Blogs </h2>
+<div>The latest blogs are on top</div>
+    {% for blogs in blogs %}
+        <div>
+            <a href="{% url 'blog_detail' blogs.id %}">
+                {{blogs.title}}
+            </a>
+            <p>
+                {{blogs.details}}
+            </p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
