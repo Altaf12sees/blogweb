@@ -8,4 +8,7 @@ Blog | Detail
 
 <h2>{{ blogs.title }}</h2>
 <p>{{ blogs.details }}</p>
+
+<a href="{% url 'update_blog' blogs.id %}">Edit</a>
+<a href="{% url 'delete_blog' blogs.id %}">Delete</a>
 {% endblock %}
