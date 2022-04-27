@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/77b24dcd-cb00-4c4b-a3eb-ad70b3b8b216/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/tehreer",
+    "appService.deploySubpath": "."
+}
