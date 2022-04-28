@@ -4,13 +4,14 @@ from pathlib import Path
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 
 hostname = os.environ['DBHOST']
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['db-myblog'],
+        'NAME': os.environ['DBNAME'],
         'HOST': hostname + ".postgres.database.azure.com",
         'USER': os.environ['DBUSER'] + "@" + hostname,
-        'PASSWORD': os.environ['110i5#ekwunC*'] 
+        'PASSWORD': os.environ['DBPASS'] 
     }
 }
 
