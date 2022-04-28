@@ -129,4 +129,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #for production only
 if 'WEBSITE_HOSTNAME' in os.environ: # Running on Azure
-    from .azure import *
+    from .production import *
